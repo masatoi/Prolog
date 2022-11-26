@@ -8,11 +8,7 @@
 
 ;;; The basic are in auxfns.lisp; look for "PATTERN MATCHING FACILITY"
 
-(provide "patmatch")
-
-(eval-when (:compile-toplevel :load-toplevel :execute)
-  (require "auxfns")
-  )
+(in-package :prolog)
 
 (defun variable-p (x)
   "Is x a variable (a symbol beginning with `?')?"

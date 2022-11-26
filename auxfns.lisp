@@ -2,10 +2,7 @@
 ;;; Code from Paradigms of AI Programming
 ;;; Copyright (c) 1991 Peter Norvig
 
-;;; File auxfns.lisp: Auxiliary functions used by all other programs
-;;; Load this file before running any other programs.
-
-(provide "auxfns")
+(in-package :prolog)
 
 ;;;; Implementation-Specific Details
 
@@ -277,7 +274,7 @@
 ;;;; PATTERN MATCHING FACILITY
 
 (defconstant fail nil)
-(defconstant no-bindings '((t . t)))
+(defparameter no-bindings '((t . t)))
 
 ;;;(defun pat-match (pattern input &optional (bindings no-bindings))
 ;;;  "Match pattern against input in the context of the bindings"

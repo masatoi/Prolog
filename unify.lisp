@@ -4,11 +4,7 @@
 
 ;;;; File unify.lisp: Unification functions
 
-(provide "unify")
-
-(eval-when (:compile-toplevel :load-toplevel :execute)
-  (require "patmatch")
-  )
+(in-package :prolog)
 
 (defparameter *occurs-check* t "Should we do the occurs check?")
 

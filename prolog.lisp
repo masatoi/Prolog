@@ -4,11 +4,7 @@
 
 ;;;; File prolog.lisp: prolog from (11.3), with interactive backtracking.
 
-(provide "prolog")
-
-(eval-when (:compile-toplevel :load-toplevel :execute)
-  (require "unify") ; does not require "prolog1"
-  )
+(in-package :prolog)
 
 ;;;; does not include destructive unification (11.6); see prologc.lisp
 
